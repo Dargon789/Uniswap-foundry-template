@@ -1,47 +1,66 @@
-## Template Repo (Foundry)
+## Foundry
 
-[![test](https://github.com/Dargon789/Uniswap-foundry-contracts/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/Dargon789/Uniswap-foundry-contracts/actions/workflows/test.yaml)
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Dargon789/Uniswap-foundry-template/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Dargon789/Uniswap-foundry-template/tree/main)
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-This template repo is a quick and easy way to get started with a new Solidity project. It comes with a number of features that are useful for developing and deploying smart contracts. Such as:
+Foundry consists of:
 
-- Pre-commit hooks for formatting, auto generated documentation, and more
-- Various libraries with useful contracts (OpenZeppelin, Solady) and libraries (Deployment log generation, storage checks, deployer templates)
+- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+- **Chisel**: Fast, utilitarian, and verbose Solidity REPL.
 
-#### Table of Contents
+## Documentation
 
-- [Setup](#setup)
-- [Deployment](#deployment)
-- [Docs](#docs)
-- [Contributing](#contributing)
+https://book.getfoundry.sh/
 
-## Setup
+## Usage
 
-Follow these steps to set up your local environment:
-
-- [Install foundry](https://book.getfoundry.sh/getting-started/installation)
-- Install dependencies: `forge install`
-- Build contracts: `forge build`
-- Test contracts: `forge test`
-
-If you intend to develop on this repo, follow the steps outlined in [CONTRIBUTING.md](CONTRIBUTING.md#install).
-
-## Deployment
-
-This repo utilizes versioned deployments. For more information on how to use forge scripts within the repo, check [here](CONTRIBUTING.md#deployment).
-
-Smart contracts are deployed or upgraded using the following command:
+### Build
 
 ```shell
-forge script script/Deploy.s.sol --broadcast --rpc-url <rpc_url> --verify
+$ forge build
 ```
 
-## Docs
+### Test
 
-The documentation and architecture diagrams for the contracts within this repo can be found [here](docs/).
-Detailed documentation generated from the NatSpec documentation of the contracts can be found [here](docs/autogen/src/src/).
-When exploring the contracts within this repository, it is recommended to start with the interfaces first and then move on to the implementation as outlined [here](CONTRIBUTING.md#natspec--comments)
+```shell
+$ forge test
+```
 
-## Contributing
+### Format
 
-If you want to contribute to this project, please check [CONTRIBUTING.md](CONTRIBUTING.md) first.
+```shell
+$ forge fmt
+```
+
+### Gas Snapshots
+
+```shell
+$ forge snapshot
+```
+
+### Anvil
+
+```shell
+$ anvil
+```
+
+### Deploy
+
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
+
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
