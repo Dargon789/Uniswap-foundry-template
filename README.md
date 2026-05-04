@@ -5,7 +5,7 @@
 
 This template repo is a quick and easy way to get started with a new Solidity project. It comes with a number of features that are useful for developing and deploying smart contracts, such as:
 
-- Pre-commit hooks for formatting, auto generated documentation, and more
+- Pre-commit hooks for formatting, auto-generated documentation, and more
 - Various libraries with useful contracts (OpenZeppelin, Solady) and libraries (Deployment log generation, storage checks, deployer templates)
 
 #### Table of Contents
