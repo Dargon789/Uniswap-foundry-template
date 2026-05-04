@@ -39,7 +39,7 @@ forge script script/Deploy.s.sol --broadcast --rpc-url <rpc_url> --verify
 ## Docs
 
 The documentation and architecture diagrams for the contracts within this repo can be found [here](docs/).
-Detailed documentation generated from the NatSpec documentation of the contracts can be found [here](docs/autogen/src/src/).
+Detailed documentation generated from the NatSpec documentation of the contracts can be found [here](docs/autogen/src/).
 When exploring the contracts within this repository, it is recommended to start with the interfaces first and then move on to the implementation as outlined [here](CONTRIBUTING.md#natspec--comments)
 
 ## Contributing
