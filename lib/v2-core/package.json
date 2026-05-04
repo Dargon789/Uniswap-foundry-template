@@ -26,7 +26,7 @@
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
     "ethereum-waffle": "^4.0.0",
-    "ethereumjs-util": "^6.2.1",
+    "ethereumjs-util": "^7.0.2",
     "mocha": "^6.2.2",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
@@ -42,7 +42,13 @@
     "compile": "waffle .waffle.json",
     "pretest": "yarn compile",
     "test": "mocha",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "yarn test",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
+  }
 }
