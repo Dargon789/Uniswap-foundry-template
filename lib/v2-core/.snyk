@@ -1,0 +1,23 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - ethereum-waffle > typechain > lodash:
+        patched: '2026-05-04T02:02:04.297Z'
+        id: SNYK-JS-LODASH-567746
+        path: ethereum-waffle > typechain > lodash
+    - ethereum-waffle > @ethereum-waffle/compiler > @typechain/ethers-v5 > lodash:
+        patched: '2026-05-04T02:02:04.297Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          ethereum-waffle > @ethereum-waffle/compiler > @typechain/ethers-v5 >
+          lodash
+    - ethereum-waffle > @ethereum-waffle/chai > @ethereum-waffle/provider > @ganache/ethereum-options > @ganache/ethereum-utils > @ethereumjs/vm > async-eventemitter > async > lodash:
+        patched: '2026-05-04T02:02:04.297Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          ethereum-waffle > @ethereum-waffle/chai > @ethereum-waffle/provider >
+          @ganache/ethereum-options > @ganache/ethereum-utils > @ethereumjs/vm >
+          async-eventemitter > async > lodash
