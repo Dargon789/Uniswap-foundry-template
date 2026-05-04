@@ -3,7 +3,7 @@
 [![test](https://github.com/Dargon789/Uniswap-foundry-contracts/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/Dargon789/Uniswap-foundry-contracts/actions/workflows/test.yaml)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Dargon789/Uniswap-foundry-template/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Dargon789/Uniswap-foundry-template/tree/main)
 
-This template repo is a quick and easy way to get started with a new Solidity project. It comes with a number of features that are useful for developing and deploying smart contracts. Such as:
+This template repo is a quick and easy way to get started with a new Solidity project. It comes with a number of features that are useful for developing and deploying smart contracts, such as:
 
 - Pre-commit hooks for formatting, auto generated documentation, and more
 - Various libraries with useful contracts (OpenZeppelin, Solady) and libraries (Deployment log generation, storage checks, deployer templates)
